@@ -19,3 +19,7 @@ obj-$(CONFIG_DRM_PANEL_SEIKO_43WVF1G) += panel-seiko-43wvf1g.o
 obj-$(CONFIG_DRM_PANEL_SHARP_LQ101R1SX01) += panel-sharp-lq101r1sx01.o
 obj-$(CONFIG_DRM_PANEL_SHARP_LS043T1LE01) += panel-sharp-ls043t1le01.o
 obj-$(CONFIG_DRM_PANEL_SITRONIX_ST7789V) += panel-sitronix-st7789v.o
+# obj-$(CONFIG_DRM_PANEL_IT6113) += ite6113.o
+# obj-$(CONFIG_DRM_PANEL_NT36532_DSI_VDO_TIANMA) += panel-nt36532-dsi-vdo-tianma.o
+# obj-$(CONFIG_BACKLIGHT_KTZ8866) += ktz8866.o
+# obj-$(CONFIG_DRM_PANEL_NT36532_DSI_VDO_BOE_6382) += panel-nt36532-dsi-vdo-boe-6382.o

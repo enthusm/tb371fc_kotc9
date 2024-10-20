@@ -15,6 +15,17 @@ config TOUCHSCREEN_PROPERTIES
 	def_tristate INPUT
 	depends on INPUT
 
+
+config TOUCHSCREEN_NT36xxx_HOSTDL_SPI
+         bool "NT36532 for Mediatek package"
+         default y
+         help
+           Say Y here if you have NT36532 touch panel.
+           If unsure, say N.
+           To compile this dirver as a module, choose M here: the
+           module will be called.
+source "drivers/input/touchscreen/nt36532/Kconfig"
+
 config TOUCHSCREEN_88PM860X
 	tristate "Marvell 88PM860x touchscreen"
 	depends on MFD_88PM860X

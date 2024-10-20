@@ -36,6 +36,9 @@ quiet_cmd_fwbin = MK_FW   $@
 # One of these files will change, or come into existence, whenever
 # the configuration changes between 32-bit and 64-bit. The .S files
 # need to change when that happens.
+
+
+
 wordsize_deps := $(wildcard include/config/64bit.h include/config/32bit.h \
 		include/config/ppc32.h include/config/ppc64.h \
 		include/config/superh32.h include/config/superh64.h \

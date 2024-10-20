@@ -3,11 +3,16 @@ set -o pipefail
 
 PROJECT=tb371fc
 CONFIG=vendor/${PROJECT}_defconfig
-GCC_PATH=${PWD}/prebuilts/aarch64-linux-android-4.9/bin
-CC=clang-9
+GCC_PATH=/home/kern/Desktop/dev_authentic/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin
+CC=/home/kern/Desktop/dev_authentic/prebuilts/clang/host/linux-x86/clang-r353983c/bin/clang
 export PATH=$GCC_PATH:$PATH
 
+# PROJECT=tb371fc
+# CONFIG=vendor/${PROJECT}_defconfig
+# GCC_PATH=/home/kern/Desktop/dev_authentic/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin
+# CC=/home/kern/Desktop/clang10006/bin/clang
 
+export PATH=$GCC_PATH:$PATH
 BUILD_PATH=${PWD}/build
 KERNEL_BUILD_PATH=${BUILD_PATH}/kernel
 MOD_PATH=${BUILD_PATH}/vendor
